@@ -37,7 +37,6 @@
                                     ">
                         {{ __('Use a recovery code') }}
                     </button>
-
                     <button type="button" class="text-sm text-gray-600 hover:text-gray-900 underline cursor-pointer"
                                     x-show="recovery"
                                     x-on:click="
@@ -46,11 +45,10 @@
                                     ">
                         {{ __('Use an authentication code') }}
                     </button>
-
                     <x-jet-button class="ml-4">
                         {{ __('Login') }}
                     </x-jet-button>
-                </div>
+                    </div>
             </form>
         </div>
     </x-jet-authentication-card>

@@ -43,9 +43,10 @@
                 
 
                 <x-jet-button class="ml-4">
-                   {{ csrf_field() }}
+                   
                     {{ __('Login') }}
                 </x-jet-button>
+                
             </div>
         </form>
     </x-jet-authentication-card>
