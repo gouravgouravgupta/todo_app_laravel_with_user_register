@@ -5,7 +5,7 @@ $url='postgres://keiemhgunukflk:0617eefe4cfa960ad98c1313e0a818d77042ec03052b00e2
 
 
 
-$DATABASE_URL=parse_url($url);
+
 
 
 return [
@@ -69,7 +69,7 @@ return [
             ]) : [],
         ],
 
-        'pgsql' => [
+        /*'pgsql' => [
             'driver' => 'pgsql',
             'url' => $DATABASE_URL,
             'host' => $DATABASE_URL["host"],
@@ -77,6 +77,21 @@ return [
             'database' => ltrim($DATABASE_URL["path"], "/"),
             'username' => $DATABASE_URL["user"],
             'password' => $DATABASE_URL["pass"],
+            'charset' => 'utf8',
+            'prefix' => '',
+            'prefix_indexes' => true,
+            'schema' => 'public',
+            'sslmode' => 'prefer',
+        ],
+        */
+        'pgsql' => [
+            'driver' => 'pgsql',
+            'url' => $url,
+            'host' => 'ec2-54-157-78-113.compute-1.amazonaws.com',
+            'port' => 5432,
+            'database' => 'dd0t35cvj032kf',
+            'username' => 'dd0t35cvj032kf',
+            'password' => '0617eefe4cfa960ad98c1313e0a818d77042ec03052b00e2fea6fc11d6dc3e8b',
             'charset' => 'utf8',
             'prefix' => '',
             'prefix_indexes' => true,
