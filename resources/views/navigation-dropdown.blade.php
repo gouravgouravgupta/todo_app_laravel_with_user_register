@@ -90,7 +90,7 @@
 
                         <!-- Authentication -->
                         <form method="POST" action="{{ route('logout') }}">
-                            @csrf
+                            {{ csrf_field() }}
 
                             <x-jet-dropdown-link href="{{ route('logout') }}"
                                                 onclick="event.preventDefault();
@@ -149,7 +149,7 @@
 
                 <!-- Authentication -->
                 <form method="POST" action="{{ route('logout') }}">
-                    @csrf
+                    {{ csrf_field() }}
 
                     <x-jet-responsive-nav-link href="{{ route('logout') }}"
                                     onclick="event.preventDefault();
