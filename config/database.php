@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Str;
-$url=(string) 'postgres://keiemhgunukflk:0617eefe4cfa960ad98c1313e0a818d77042ec03052b00e2fea6fc11d6dc3e8b@ec2-54-157-78-113.compute-1.amazonaws.com:5432/dd0t35cvj032kf';
+$url='postgres://keiemhgunukflk:0617eefe4cfa960ad98c1313e0a818d77042ec03052b00e2fea6fc11d6dc3e8b@ec2-54-157-78-113.compute-1.amazonaws.com:5432/dd0t35cvj032kf';
 
 
 
